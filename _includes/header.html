@@ -10,14 +10,14 @@
     <meta name="dcterms.rightsHolder" content="{{site.name}}" />
     <meta name="dcterms.dateCopyrighted" content="{{site.time | date: '%Y'}} ">
     <link rel="canonical" href="{{page.url}}" />
-    <link rel="shortcut icon" href="/assets/img/favicon.ico">
-    <link rel="stylesheet" href="/assets/css/site.css">
+    <link rel="shortcut icon" href="{{site.baseurl}}/assets/img/favicon.ico">
+    <link rel="stylesheet" href="{{site.baseurl}}/assets/css/site.css">
     <title>{% if page.title %}{{ page.title }}{% else %}Simple Order System{% endif %}</title>
     {% if page.gallery %}
-    <script src="/assets/js/lazysizes.min.js" async=""></script>
+    <script src="{{site.baseurl}}/assets/js/lazysizes.min.js" async=""></script>
     
-    <link rel="stylesheet" type="text/css" href="/assets/css/gallery.css" />
-    <script src="/assets/js/modernizr.custom.js"></script>{% endif %}
+    <link rel="stylesheet" type="text/css" href="{{site.baseurl}}/assets/css/gallery.css" />
+    <script src="{{site.baseurl}}/assets/js/modernizr.custom.js"></script>{% endif %}
  
  </head> 
 <body>

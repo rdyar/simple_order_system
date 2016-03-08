@@ -3,3 +3,4 @@ title: Simple Order System
 highlighter: rouge
 # Build settings
 markdown: kramdown
+baseurl: /simple_order_system
