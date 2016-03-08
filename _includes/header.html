@@ -44,7 +44,7 @@
                         <span style="color:white;">Menu</span>
                     </button>
                     <a class="navbar-brand" href="/">
-                        <img id="logo-header" src="/assets/img/pro-lab-prints-logo14.png" alt="Logo">
+                        <img id="logo-header" src="{{site.baseurl}}/assets/img/pro-lab-prints-logo14.png" alt="Logo">
                     </a>
                 </div>
 
@@ -54,7 +54,7 @@
                          <li {% if page.active %} class="active"{% endif %}><a href="/">Home</a>
                     </li>  
                                                                  
-                        <li {% if page.url == '/about/' %} class="active"{% endif %}><a href="/about/">About Us</a></li> 
+                        <li {% if page.url == '{{site.baseurl}}/about/' %} class="active"{% endif %}><a href="{{site.baseurl}}/about/">About Us</a></li> 
                     
                        
                         </ul>
