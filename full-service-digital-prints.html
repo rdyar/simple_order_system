@@ -1,0 +1,28 @@
+---
+layout: default
+gallery: true
+permalink: /full-service-digital-prints/
+---
+
+<div style="text-align:right">            
+                         <a class="btn btn-success" href="/">Continue Ordering</a>
+                         <a class="btn btn-warning" href="/view-cart/">View Cart</a>  
+                   
+
+                        </div>
+                        <div style="text-align:center">   
+                        <h2>Catalog Name here</h2>
+                        <p>Catalog description goes here.</p>
+                        </div>
+ <ul  class="og-grid">      
+          
+        {% for p in site.data.products %}
+          <li>
+            <a href="{{cat.url}}"> <img class="lazyload img-circle" title="{{cat.catalog}}" src="http://placehold.it/90x70"/></a>
+             <p style="max-width:90px; padding-top:6px;">{{p.product}}
+             <br><span style="font-size:small;">{{.subtitle}}</span></p>
+              
+          </li>
+    
+          {% endfor %} 
+        </ul>

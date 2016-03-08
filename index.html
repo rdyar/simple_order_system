@@ -1,0 +1,21 @@
+---
+layout: default
+gallery: true
+---
+
+<div style="text-align:right">            
+                          <a class="btn btn-warning" href="/view-cart/">View Cart</a>  
+           
+                        </div>
+ <ul  class="og-grid">      
+          
+        {% for cat in site.data.catalogs %}
+          <li>
+            <a href="{{cat.url}}"> <img class="lazyload" title="{{cat.catalog}}" src="http://placehold.it/170x170"/></a>
+             <p style="max-width:170px; padding-top:6px;">{{cat.catalog}}
+             <br><span style="font-size:small;">{{cat.subtitle}}</span></p>
+              
+          </li>
+    
+          {% endfor %} 
+        </ul>

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<!--[if IE 8]> <html lang="en" class="ie8"> <![endif]-->  
+<!--[if IE 9]> <html lang="en" class="ie9"> <![endif]-->  
+<!--[if !IE]><!--> <html lang="en"> <!--<![endif]-->  
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <meta name="description" content="{{page.description}}">
+    <meta name="author" content="{{site.name}}">
+    <meta name="dcterms.rightsHolder" content="{{site.name}}" />
+    <meta name="dcterms.dateCopyrighted" content="{{site.time | date: '%Y'}} ">
+    <link rel="canonical" href="{{page.url}}" />
+    <link rel="shortcut icon" href="/assets/img/favicon.ico">
+    <link rel="stylesheet" href="/assets/css/site.css">
+    <title>{% if page.title %}{{ page.title }}{% else %}Simple Order System{% endif %}</title>
+    {% if page.gallery %}
+    <script src="/assets/js/lazysizes.min.js" async=""></script>
+    
+    <link rel="stylesheet" type="text/css" href="/assets/css/gallery.css" />
+    <script src="/assets/js/modernizr.custom.js"></script>{% endif %}
+ 
+ </head> 
+<body>
+
+<div class="wrapper">
+    <!--=== Header ===-->    
+    <div class="header">
+        <!-- Topbar -->
+        <div class="topbar">
+           <!--  <div class="container">
+               Topbar Navigation
+               <span class="loginbar pull-right">Hours: Mon-Fri 9am-6pm (PST)</span>
+           </div> -->
+        </div>
+        <!-- End Topbar -->
+        <!-- Navbar -->
+        <div class="navbar navbar-default" role="navigation">
+            <div class="container">
+                <!-- Brand and toggle get grouped for better mobile display -->
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-responsive-collapse">
+                        <span class="sr-only">Toggle navigation</span>
+                       <!--  <span class="fa fa-bars"></span> -->
+                        <span style="color:white;">Menu</span>
+                    </button>
+                    <a class="navbar-brand" href="/">
+                        <img id="logo-header" src="/assets/img/pro-lab-prints-logo14.png" alt="Logo">
+                    </a>
+                </div>
+
+                <div class="collapse navbar-collapse navbar-responsive-collapse">
+                    <ul class="nav navbar-nav">
+                        <!-- Home -->
+                         <li {% if page.active %} class="active"{% endif %}><a href="/">Home</a>
+                    </li>  
+                                                                 
+                        <li {% if page.url == '/about/' %} class="active"{% endif %}><a href="/about/">About Us</a></li> 
+                    
+                       
+                        </ul>
+                </div><!--/navbar-collapse-->
+            </div>    
+        </div>            
+        <!-- End Navbar -->
+    </div>
+    <!--=== End Header ===-->  

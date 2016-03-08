@@ -1,0 +1,5 @@
+# Site settings
+title: Simple Order System
+highlighter: rouge
+# Build settings
+markdown: kramdown
