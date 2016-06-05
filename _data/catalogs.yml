@@ -1,60 +1,21 @@
-- catalog: Full Service Prints
+- catalog: Full Service Luster Prints
   subtitle: Color and Density  Corrected
   description: Full Service digital prints on Fuji Pro Luster paper.
   icon: placeholder.png
-  url: "/full-service-digital-prints/"
+  url: "/services/full-service-luster-prints/"
+  products:
+    - size: 4x6
+      code: 4rd
+    - size: 5x7
+      code: 5rd      
 
-- catalog: Pro Pricing Prints
-  subtitle: Printed as-is
-  description: Pro Pricing digital prints on Fuji Pro Luster paper - printed as-is.
+- catalog: Canvas Wraps
+  subtitle: Ready to hang Wall Art
+  description: We will send you a preview of the wrapped edges before we print it.
   icon: placeholder.png
-  url: "/full-service-digital-prints/"
-
-- catalog: Fuji Pearl Prints 
-  subtitle: High Gloss Prints
-  description: "Double sided flat and folded card stock. Standard, Pearl or Pearl Linen papers."
-  icon: placeholder.png
-  url: "/full-service-digital-prints/"
-
-- catalog: Large Prints
-  subtitle: 16x20 and Larger
-  description: Full Service digital prints on Fuji Pro Luster paper.
-  icon: placeholder.png
-  url: "/full-service-digital-prints/"
-
-- catalog: Scrapbook Prints
-  subtitle: 12x12s and other sizes
-  description: "Double sided flat and folded card stock. Standard, Pearl or Pearl Linen papers."
-  icon: placeholder.png
-  url: "/full-service-digital-prints/"
-
-- catalog: Canvas Gallery Wraps
-  subtitle: 
-  description: Your image printed on Canvas and wrapped around 1.5" deep stretcher frame. Comes ready to hang.
-  icon: placeholder.png
-  url: "/full-service-digital-prints/"
-
-- catalog: Prints on Metal
-  subtitle: 
-  description: Stunning! Your image infused into a piece of aluminum.
-  icon: placeholder.png
-  url: "/full-service-digital-prints/"
-
-- catalog: Press Printed Products
-  subtitle: 
-  description: "Double sided flat and folded card stock. Standard, Pearl or Pearl Linen papers."
-  icon: placeholder.png
-  url: "/full-service-digital-prints/"
-
-- catalog: Die Cut Wallets
-  subtitle: 
-  description: Your image printed on Canvas and wrapped around 1.5" deep stretcher frame. Comes ready to hang.
-  icon: placeholder.png
-  url: "/full-service-digital-prints/"
-
-- catalog: Prints on Tile
-  subtitle: 
-  description: Stunning! Your image infused into a piece of aluminum.
-  icon: placeholder.png
-  url: "/full-service-digital-prints/"
-
+  url: "/services/canvas-wraps/"
+  products:
+    - size: 11x14
+      code: 1114gw
+    - size: 16x20
+      code: 1620gw

@@ -3,4 +3,8 @@ title: Simple Order System
 highlighter: rouge
 # Build settings
 markdown: kramdown
-baseurl: /simple_order_system
+#baseurl: /simple_order_system
+exclude: ["zz-notes.md","package.json","rakefile.rb","README.md","s3_website.yml","node_modules","gulpfile.js"]
+collections:
+  api:
+    output: true

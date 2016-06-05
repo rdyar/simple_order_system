@@ -1,0 +1,10 @@
+---
+layout: page
+title: API Endpoints
+permalink: /api-endpoints/
+---
+<p>You can access the various api endpoints at the urls below:</p>
+{% for e in site.api %}
+<p><a href="{{e.url}}">{{e.title}}</a></p>
+{% endfor %}
+

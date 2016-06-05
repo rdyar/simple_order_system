@@ -1,0 +1,13 @@
+---
+---
+ [
+    {% for c in site.data.catalogs %}
+        {
+          "catalog" : "{{ c.catalog }}",
+          "subtitle" : "{{ c.subtitle }}",
+          "description" : "{{ c.description }}",
+          "icon" : "{{ c.icon }}",
+          "url" : "{{ c.url }}"
+        } {% if forloop.last %}{% else %},{% endif %}
+    {% endfor %}
+    ] 
