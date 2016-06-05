@@ -1,0 +1,18 @@
+- labid: fromex5346
+  requireuserid: true
+  labactive: true
+  apiurls: do we need to tell the app the location of all other api endpoints? easier than maintaining links? separate file maybe?
+  globalcheckoutoptions: 
+    - headline: CD/USB of Images
+      subheading: If you would like us to also make you a CD or USB of all your images, you can select that below.
+      required: false
+      choices:
+        - choice: No CD
+          choiceprice:
+          choicecode:  
+        - choice: Yes burn to CD
+          choiceprice: 6.99
+          choicecode: b2cd
+        - choice: Yes burn to USB
+          choiceprice: 12.99
+          choicecode: b2usb

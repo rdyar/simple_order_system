@@ -1,0 +1,16 @@
+- labid: fromex5346
+  labactive: true
+  labname: Fromex Photo
+  labemail: ron@fromex.net
+  labphone: 619-287-5346
+  labaddress1: 6370 El Cajon Blvd
+  labaddress2:
+  labcity: San Diego
+  labstate: California
+  labzip: 92115
+  labwebsite: prolabprints.com
+  s3bucket: url to s3 bucket
+  s3userid: userid
+  s3secret: the s3secret
+  labmessage:    #shows at bottom of email
+

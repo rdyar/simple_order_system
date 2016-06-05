@@ -27,10 +27,29 @@ permalink: /view-cart/
             <td>dsc_5656.png</td>
             <td>4x6 - Full Service Prints</td>
              <td>
+                 <label for="qty">Qty: </label> <input id="qty" type="number" class="form-control" style="width:50px;" value="10">
+            </td>
+            <td><a onclick="opencartpage();" class="btn btn-sm btn-primary">Options</a></td>
+             <td>$4.00</td>
+        </tr>
+          <tr>
+            <td>dsc_5656.png</td>
+            <td>16x20 - Canvas Wrap</td>
+             <td>
+                 <label for="qty">Qty: </label> <input id="qty" type="number" class="form-control" style="width:50px;" value="1">
+            </td>
+            <td>-</td>
+             <td>$80.00</td>
+        </tr>
+          <tr>
+            <td>dsc_5656.png</td>
+            <td>8x10 - Full Service Prints
+            <br><span class="small">+ Gatorboard $10</span></td>
+             <td>
                  <label for="qty">Qty: </label> <input id="qty" type="number" class="form-control" style="width:50px;" value="3">
             </td>
-            <td>*</td>
-             <td>*</td>
+            <td><a onclick="opencartpage();" class="btn btn-sm btn-primary">Options</a></td>
+             <td>$14.00</td>
         </tr>
           <tr>
             <td>dsc_5656.png</td>
@@ -38,36 +57,24 @@ permalink: /view-cart/
              <td>
                  <label for="qty">Qty: </label> <input id="qty" type="number" class="form-control" style="width:50px;" value="3">
             </td>
-            <td>*</td>
-             <td>*</td>
-        </tr>
-          <tr>
-            <td>dsc_5656.png</td>
-            <td>4x6 - Full Service Prints</td>
-             <td>
-                 <label for="qty">Qty: </label> <input id="qty" type="number" class="form-control" style="width:50px;" value="3">
-            </td>
-            <td>*</td>
-             <td>*</td>
-        </tr>
-          <tr>
-            <td>dsc_5656.png</td>
-            <td>4x6 - Full Service Prints</td>
-             <td>
-                 <label for="qty">Qty: </label> <input id="qty" type="number" class="form-control" style="width:50px;" value="3">
-            </td>
-            <td>*</td>
-             <td>*</td>
+            <td><a onclick="opencartpage();" class="btn btn-sm btn-primary">Options</a></td>
+             <td>$1.95</td>
         </tr>
         
 
     </tbody>
 </table>
 
-* This simple ordering system is unable to display options or prices. If you need mounting on a certain print, please let us know in the special instructions box. Prices will be charged per our listed prices on our website. Our ROES ordering system for PC's and Mac's shows cropping, options, pricing, and can collect your credit card info.
-
 <div style="text-align:right;padding-top:16px;">   
       
   <a class="btn btn-success" href="{{site.baseurl}}/checkout/">Checkout</a>
 </div>
 
+<script>
+function opencartpage() {
+  
+  if (confirm("Clicking on options should show the available options for the product (in a popup?), if there are any.") == true) {
+   
+    } 
+}
+</script>

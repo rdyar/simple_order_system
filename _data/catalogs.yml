@@ -3,16 +3,41 @@
   description: Full Service digital prints on Fuji Pro Luster paper.
   icon: placeholder.png
   url: "/services/full-service-luster-prints/"
+  ordertier: true
+  tiers: 1,10,100
   products:
     - size: 4x6
       code: 4rd
+      tieredprice: .65,.4,.35
     - size: 5x7
       code: 5rd 
+      tieredprice: 1,.5,.4,.35
       options: 
-        - option: Gator mount
-          price: "4.00"
+        optionset:
+          - option: Gator mount
+            price: "4.00"
+            code: 57mg
     - size: 8x10
-      code: 8rd           
+      code: 8rd
+      tieredprice: 4,2.50,2.00
+      options: 
+        optionset:
+          - option: Gatorboard
+            price: 10
+            code: 810mg
+          - option: Foamcore
+            price: 8
+            code: 810mf
+          - option: styrenne
+            price: 5
+            code: 810ms
+        optionset:
+          - option: simple hangtab
+            price: 5
+            code: hangtab
+          - option: hanging cleat
+            price: 10
+            code: hcsmall 
 
 - catalog: Canvas Wraps
   subtitle: Ready to hang Wall Art
@@ -22,5 +47,8 @@
   products:
     - size: 11x14
       code: 1114gw
+      price: 50
     - size: 16x20
       code: 1620gw
+      price: 80
+      weight: 2

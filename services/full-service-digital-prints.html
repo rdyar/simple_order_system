@@ -17,7 +17,8 @@ permalink: /services/full-service-luster-prints/
                          <ul  class="og-grid">  
                 {% for p in item.products %}
           <li>
-            <a href=""> <img class="lazyload img-circle" title="{{p.size}}" src="http://placehold.it/90x70"/></a>
+            <a class="linkme" onclick="document.getElementById('upload').click();opencartpage();"> <img title="{{p.size}}" src="http://placehold.it/90x70"/></a>
+           <!--  <a  onclick="opencartpage();"> <img title="{{p.size}}" src="http://placehold.it/90x70"/></a> -->
              <p style="max-width:90px; padding-top:6px;">{{ p.size }}
              <br><span style="font-size:small;">{{ p.code }}</span></p>
               
@@ -27,5 +28,18 @@ permalink: /services/full-service-luster-prints/
         </ul>
                            {% endfor %} 
                         </div>
+
+                        <input type="file" id="upload" name="upload" style="visibility: hidden; width: 1px; height: 1px" multiple />
+
  
-      
+<script>
+function opencartpage() {
+   var delay=2000; //1 second
+
+setTimeout(function() {
+  if (confirm("After the file browser opens and you select some images and click ok, you should be taken to the view cart page where those images would be added to the list. Clicking ok here will redirect you to the cart page where you will see some images in the cart.") == true) {
+    window.location = "{{site.baseurl}}/view-cart/";
+    } 
+}, delay);}
+   
+</script>
