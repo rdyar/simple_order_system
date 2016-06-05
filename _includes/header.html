@@ -43,7 +43,7 @@
                        <!--  <span class="fa fa-bars"></span> -->
                         <span style="color:white;">Menu</span>
                     </button>
-                    <a class="navbar-brand" href="/">
+                    <a class="navbar-brand" href="{{site.baseurl}}/">
                         <img id="logo-header" src="{{site.baseurl}}/assets/img/pro-lab-prints-logo14.png" alt="Logo">
                     </a>
                 </div>
@@ -51,7 +51,7 @@
                 <div class="collapse navbar-collapse navbar-responsive-collapse">
                     <ul class="nav navbar-nav">
                         <!-- Home -->
-                         <li {% if page.active %} class="active"{% endif %}><a href="/">Home</a>
+                         <li {% if page.active %} class="active"{% endif %}><a href="{{site.baseurl}}/">Home</a>
                     </li>  
                                                                  
                         <li {% if page.url == '{{site.baseurl}}/api-endpoints/' %} class="active"{% endif %}><a href="{{site.baseurl}}/api-endpoints/">API endpoints</a></li> 

@@ -5,6 +5,6 @@ permalink: /api-endpoints/
 ---
 <p>You can access the various api endpoints at the urls below:</p>
 {% for e in site.api %}
-<p><a href="{{e.url}}">{{e.title}}</a></p>
+<p><a href="{{site.baseurl}}{{e.url}}">{{e.title}}</a></p>
 {% endfor %}
 
