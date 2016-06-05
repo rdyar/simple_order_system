@@ -7,7 +7,12 @@
     - size: 4x6
       code: 4rd
     - size: 5x7
-      code: 5rd      
+      code: 5rd 
+      options: 
+        - option: Gator mount
+          price: "4.00"
+    - size: 8x10
+      code: 8rd           
 
 - catalog: Canvas Wraps
   subtitle: Ready to hang Wall Art
