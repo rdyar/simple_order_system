@@ -5,8 +5,8 @@ permalink: /services/canvas-wraps/
 ---
 
 <div style="text-align:right">            
-                         <a class="btn btn-success" href="/">Continue Ordering</a>
-                         <a class="btn btn-warning" href="/view-cart/">View Cart</a>  
+                         <a class="btn btn-success" href="{{site.baseurl}}/">Continue Ordering</a>
+                         <a class="btn btn-warning" href="{{site.baseurl}}/view-cart/">View Cart</a>  
 </div>
                         <div style="text-align:center">
                     {% assign me = site.data.catalogs | where: "catalog","Canvas Wraps" %}
@@ -17,7 +17,7 @@ permalink: /services/canvas-wraps/
                          <ul  class="og-grid">      
                {% for p in item.products %}
           <li>
-            <a href="{{cat.url}}"> <img class="lazyload img-circle" title="{{cat.catalog}}" src="http://placehold.it/90x70"/></a>
+            <a href=""> <img class="lazyload img-circle" title="{{p.catalog}}" src="http://placehold.it/90x70"/></a>
              <p style="max-width:90px; padding-top:6px;">{{ p.sizeme }}
              <br><span style="font-size:small;">{{ p.code }}</span></p>
               
