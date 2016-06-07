@@ -1,0 +1,15 @@
+---
+---
+ [
+    {% for c in site.data.shippingmethods %}
+        {
+          "shippingmethod" : "{{ c.shipmethod }}",
+          "description" : "{{ c.shipdescription }}",
+          "shiptype" : "{{ c.shiptype }}",
+          "tieruses" : "{{ c.tieruses }}",
+          "price" : "{{ c.price }}",
+          "code" : "{{ c.code }}",
+          "taxable" : "{{ c.taxable }}"
+        } {% if forloop.last %}{% else %},{% endif %}
+    {% endfor %}
+    ] 

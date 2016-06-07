@@ -3,15 +3,15 @@
   description: Full Service digital prints on Fuji Pro Luster paper.
   icon: placeholder.png
   url: "/services/full-service-luster-prints/"
-  ordertier: true
-  tiers: 1,10,100
   products:
     - size: 4x6
       code: 4rd
-      tieredprice: .65,.4,.35
+      ordertier: true
+      price: 1,.65,10,.4,100,.35
     - size: 5x7
       code: 5rd 
-      tieredprice: 1,.5,.4,.35
+      ordertier: true
+      price: 1,1.75,10,1,100,.75
       options: 
         optionset:
           - option: Gator mount
@@ -19,7 +19,8 @@
             code: 57mg
     - size: 8x10
       code: 8rd
-      tieredprice: 4,2.50,2.00
+      ordertier: true
+      price: 1,4,10,2.50,100,2.00
       options: 
         optionset:
           - option: Gatorboard
@@ -48,6 +49,7 @@
     - size: 11x14
       code: 1114gw
       price: 50
+      weight: 1
     - size: 16x20
       code: 1620gw
       price: 80

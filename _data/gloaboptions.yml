@@ -1,7 +1,11 @@
 - labid: fromex5346
   requireuserid: true
   labactive: true
+  salestax: .08
+  homestate: ca  #used with sales tax - if order is shipped to another state then no tax
+  allowedfiletypes: jpg,tif,png,psd,pdf
   apiurls: do we need to tell the app the location of all other api endpoints? easier than maintaining links? separate file maybe?
+  emailtext: lab custom text (for email, could contain store hours for example)
   globalcheckoutoptions: 
     - headline: CD/USB of Images
       subheading: If you would like us to also make you a CD or USB of all your images, you can select that below.
@@ -10,9 +14,12 @@
         - choice: No CD
           choiceprice:
           choicecode:  
+          choicepriceperfile: false  # false means it is one time for the order, true means once per file sent
         - choice: Yes burn to CD
           choiceprice: 6.99
+          choicepriceperfile: false
           choicecode: b2cd
         - choice: Yes burn to USB
           choiceprice: 12.99
+          choicepriceperfile: false
           choicecode: b2usb
