@@ -1,9 +1,10 @@
 ---
-layout: page
+layout: default
 title: API Endpoints
 permalink: /api-endpoints/
 ---
-<p>You can access the various api endpoints at the urls below:</p>
+<h1 class="pad-top">API End Points</h1>
+<p>You can access the various API endpoints below.</p>
 {% for e in site.api %}
 <p><a href="{{site.baseurl}}{{e.url}}">{{e.title}}</a></p>
 {% endfor %}

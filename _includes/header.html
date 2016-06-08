@@ -21,46 +21,23 @@
  
  </head> 
 <body>
-
-<div class="wrapper">
-    <!--=== Header ===-->    
-    <div class="header">
-        <!-- Topbar -->
-        <div class="topbar">
-           <!--  <div class="container">
-               Topbar Navigation
-               <span class="loginbar pull-right">Hours: Mon-Fri 9am-6pm (PST)</span>
-           </div> -->
+ <header class="site-header">
+    <nav>
+    <div class="sticky-nav">
+    <div class="container-nav">
+       <div class="nav-container">
+         <div class="navbar-brand"> <a href="{{site.baseurl}}/"><img src="{{site.baseurl}}/assets/img/pro-lab-prints-logo14.png" alt="ProLabPrints"></a> </div>
+         <div class="navbar-nav nav-mobile">
+            <a class="nav-item nav-link btn btn-nav" href="{{site.baseurl}}/">Home</a>
+            <a class="nav-item nav-link btn btn-nav" href="{{site.baseurl}}/api-endpoints/">API endpoints</a>
+            
         </div>
-        <!-- End Topbar -->
-        <!-- Navbar -->
-        <div class="navbar navbar-default" role="navigation">
-            <div class="container">
-                <!-- Brand and toggle get grouped for better mobile display -->
-                <div class="navbar-header">
-                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-responsive-collapse">
-                        <span class="sr-only">Toggle navigation</span>
-                       <!--  <span class="fa fa-bars"></span> -->
-                        <span style="color:white;">Menu</span>
-                    </button>
-                    <a class="navbar-brand" href="{{site.baseurl}}/">
-                        <img id="logo-header" src="{{site.baseurl}}/assets/img/pro-lab-prints-logo14.png" alt="Logo">
-                    </a>
-                </div>
-
-                <div class="collapse navbar-collapse navbar-responsive-collapse">
-                    <ul class="nav navbar-nav">
-                        <!-- Home -->
-                         <li {% if page.active %} class="active"{% endif %}><a href="{{site.baseurl}}/">Home</a>
-                    </li>  
-                                                                 
-                        <li {% if page.url == '{{site.baseurl}}/api-endpoints/' %} class="active"{% endif %}><a href="{{site.baseurl}}/api-endpoints/">API endpoints</a></li> 
-                    
-                       
-                        </ul>
-                </div><!--/navbar-collapse-->
-            </div>    
-        </div>            
-        <!-- End Navbar -->
-    </div>
-    <!--=== End Header ===-->  
+         <div class="navbar-nav nav-main">
+            <a class="nav-item nav-link{% if page.active %} active{% endif %}" href="{{site.baseurl}}/">Home</a>
+            <a class="nav-item nav-link{% if page.url == '{{site.baseurl}}/api-endpoints/' %} active{% endif %}>" href="{{site.baseurl}}/api-endpoints/">API endpoints</a>
+         </div>
+      </div>  
+      </div>
+      </div>
+</nav>
+</header>
