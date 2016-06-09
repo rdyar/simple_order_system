@@ -3,6 +3,7 @@
   description: Full Service digital prints on Fuji Pro Luster paper.
   icon: placeholder.png
   url: "/services/full-service-luster-prints/"
+  showprices: false
   products:
     - size: 4x6
       code: 4rd
@@ -45,6 +46,7 @@
   description: We will send you a preview of the wrapped edges before we print it.
   icon: placeholder.png
   url: "/services/canvas-wraps/"
+  showprices: true
   products:
     - size: 11x14
       code: 1114gw

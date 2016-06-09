@@ -7,6 +7,7 @@
           "subtitle" : "{{ c.subtitle }}",
           "description" : "{{ c.description }}",
           "icon" : "{{ c.icon }}",
+          "showprices" : "{{ c.showprices }}",
           "url" : "{{ c.url }}"
         } {% if forloop.last %}{% else %},{% endif %}
     {% endfor %}

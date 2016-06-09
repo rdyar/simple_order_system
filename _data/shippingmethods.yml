@@ -2,7 +2,7 @@
   shipdescription: Pickup at our lab in San Diego
   shiptype: labpickup  # labpickup, ship or dropship
   tieruses: ordertotal  #ordertotal or weight
-  price: 0-1-7-0  # charges $1 for orders under $7, then no charge
+  price: "0,1,7,0"  # charges $1 for orders under $7, then no charge
   code: labpickup
   taxable: false
 
@@ -10,7 +10,7 @@
   shipdescription: USPS 1-3 Days
   shiptype: ship
   tieruses:   #ordertotal or weight
-  price: 0-7.95-40-10-100-15-250-0
+  price: "0,7.95,40,10,100,15,250,0"
   code: standard
   taxable: false
 
@@ -34,6 +34,6 @@
   shipdescription: UPS Next Day
   shiptype: dropship
   tieruses: ordertotal  #ordertotal or weight
-  price: 1-45-100-75-300-95
+  price: "1,45,100,75,300,95"  # needs quotes or it is just a bunch of numbers
   code: dropshipexpress
   taxable: false
